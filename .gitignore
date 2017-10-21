@@ -100,4 +100,7 @@ ENV/
 # mypy
 .mypy_cache/
 
+# Node Modules
+/artland-web/node_modules
+
 server
