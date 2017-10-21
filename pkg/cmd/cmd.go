@@ -37,5 +37,6 @@ func NewCmdArtLand() *cobra.Command {
 // pass in any needed info from Cobra
 func run(cmd *cobra.Command, args []string) error {
 	al := artland.NewArtLand()
-	return nil
+
+	return al.Serve()
 }
