@@ -5,4 +5,8 @@ const path = require('path');
 const app = express();
 
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, './build')));
+
+const port = process.env.PORT || 8080;
+app.listen(port)
+
